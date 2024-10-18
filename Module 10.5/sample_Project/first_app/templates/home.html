@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>This is home page</h4>
+    <h2>Author : {{author}}</h2>
+    <h2>Age : {{age}}</h2>
+    <h2>List : {{list}}</h2>
+{{list}}
+<h4>{{ list | join:" - "}}</h4>
+<h4>{{ age | add:"2" }}</h4>
+<h4>{{ myself | addslashes }}</h4>
+<h4>{{ author | capfirst }}</h4>
+<h4>"{{ author | center:"15" }}"</h4>
+<h4>{{"python is Fun" | cut:" "}}</h4>
+<h4>{{ birthday | date:"D d M Y" }}</h4>
+<h4>{{ val | default:"nothing" }}</h4>
+<h4>{{ NAME | dictsort:"name" }}</h4>
+<h4>{{ ammount | divisibleby:"3" }}</h4>
+<h4>{{ NAME| escape }}</h4>
+<h4>{{ NAME | filesizeformat }}</h4>
+<h4>{{ list | first }}</h4>
+<h4>{{ list | join:" // " }}</h4>
+<h4>{{ list | last }}</h4>
+<h4>{{ val | length}}</h4>
+<h4>{{ another_list | linenumbers }}</h4>
+<h4>{{ myself | lower }}</h4>
+<h4>{{ author | make_list }}</h4>
+<h4>{{ list | random }}</h4>
+<h4>{{ list | slice:":2" }}</h4>
+<h4>{{ birthday | time:"H:i" }}</h4>
+<h4>{{ Title | title }}</h4>
+<h4>{{ another_list | unordered_list }}</h4>
+<h4>{{ Title | upper }}</h4>
+<h4>{{ Title | wordcount }}</h4>
+<h4>{{ this_date | date:"SHORT_DATE_FORMAT" }}</h4>
+<h4>{{ "Python is Fun" | cut:" " }}</h4>
+<h4>{{ "Python-is-Fun" | cut:"-" }}</h4>
+<h4>{{ des01 | striptags}}</h4>
+<h4>{{ 'happy coding. Python is fun.' | truncatechars:6 }}</h4>
+<h4>{{ 'happy coding. Python is fun.' | truncatewords:2 }}</h4>
+
+</body>
+</html>
